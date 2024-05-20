@@ -1,0 +1,20 @@
+{
+  "name": "dom-helper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc",
+    "build": "rimraf dist && tsc --noEmit && node build.js",
+    "watch": "esbuild --watch --bundle --sourcemap --outdir=dist --format=esm src/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "0.21.2",
+    "esbuild-plugin-tsc": "0.4.0",
+    "rimraf": "5.0.7",
+    "typescript": "5.4.5"
+  }
+}
